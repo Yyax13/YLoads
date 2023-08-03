@@ -1,8 +1,8 @@
 Bem vindo ao YLoads - by Yyax13
 
-Versão atual: 1.0.0
+Versão atual: 1.0.1
 
-Update Log: ``` Ferramenta criada ```
+Update Log: ``` Bug de APK resolvido ```
 
 Install:
 
